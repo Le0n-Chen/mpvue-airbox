@@ -1,14 +1,15 @@
 <template>
   <div class="container" @click="clickHandle('test click', $event)">
+
     <div class="terminal">
-        <p class="terminal_p">终端</p>
-        <div class="terminal-area">
+        <p class="module_p">终端</p>
+        <div class="terminal_area">
 
         </div>
     </div>
-    <div>
-        <p>设备</p>
-        <div>
+    <div class="device">
+        <p class="module_p">设备</p>
+        <div class="device_area">
 
         </div>
     </div>
@@ -59,11 +60,18 @@ export default {
 }
 </script>
 
-<style scoped>
-.terminal{
+<style lang="scss">
+.container {
+    margin-top: 20px;
     width: 100%;
-}
-.terminal_p{
+    }
+.module_p {
     text-align: left;
+    width: 100%;
+    }
+.terminal_area{
+    height: 100px;
+    background-color: #fff;
+    box-shadow:0px 4px 9px 0px rgba(0,0,0,0.11);
 }
 </style>
